@@ -23,17 +23,17 @@ resource "aws_instance" "my_demo_ec2" {
 variable "region"{
   description = "the aws region"
   type = string
-  defaut = "us-east-1"
+  default = "us-east-1"
 }
 
 variable "my_ami"{
   description = "the aws ami"
   type = string
-  defaut = "ami-026ebd4cfe2c043b2"
+  default = "ami-026ebd4cfe2c043b2"
 }
 
 variable "instance_type"{
   description = "the ec2 instance type"
   type = string
-  defaut = "t2.micro"
+  default = "t2.micro"
 }
