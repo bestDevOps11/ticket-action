@@ -7,6 +7,11 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "s3" {
+    bucket = "my-terraformstate-clever-buc"
+    key    = "terraform/terraform.tfstate" #this is just a directory
+    region = "us-east-1"
+  }
 }
 provider "aws" {
   region = var.region
