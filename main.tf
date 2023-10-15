@@ -9,7 +9,7 @@ terraform {
   }
   backend "s3" {
     bucket = "my-terraformstate-clever-buc"
-    key    = "Git-action/terraform.tfstate" #this is just a directory
+    key    = "Git-action/terraform.tfstate" #this is just a directory it already exist
     region = "us-east-1"
   }
 }
