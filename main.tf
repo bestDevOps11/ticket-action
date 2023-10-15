@@ -20,20 +20,20 @@ resource "aws_instance" "my_demo_ec2" {
     "Name" = "my_first_ec2"
   }
 }
-variable "region"{
+variable "region" {
   description = "the aws region"
-  type = string
-  default = "us-east-1"
+  type        = string
+  default     = "us-east-1"
 }
 
-variable "my_ami"{
+variable "my_ami" {
   description = "the aws ami"
-  type = string
-  default = "ami-026ebd4cfe2c043b2"
+  type        = string
+  default     = "ami-026ebd4cfe2c043b2"
 }
 
-variable "instance_type"{
+variable "instance_type" {
   description = "the ec2 instance type"
-  type = string
-  default = "t2.micro"
+  type        = string
+  default     = "t2.micro"
 }
