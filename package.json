@@ -12,7 +12,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "tag": "latest"
-  }
+  },
+  "version": "1.0.2"
 }
-
-
