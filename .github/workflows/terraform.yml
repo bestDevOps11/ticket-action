@@ -38,8 +38,8 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
 
-        #- name: plan
-        #run: terraform plan
+      - name: plan
+        run: terraform plan
 
       #- name: apply
         #run: terraform apply -auto-approve
