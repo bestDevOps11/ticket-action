@@ -1,6 +1,7 @@
-
-  "dependencies": {
+{
+  "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.2.1",
     "semantic-release": "^22.0.5"
   }
+}
