@@ -1,4 +1,9 @@
 {
+  "name": "package.js",
+  "author": {
+    "name": "roussel",
+    "email": "rousseltayou6f@gmail.com"
+  },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.2.1",
