@@ -1,6 +1,6 @@
 name: Terraform
 
-on: [workflow_dispatch]     #[push]
+on: [push]          #[workflow_dispatch]
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
@@ -12,10 +12,6 @@ jobs:
       issues: write
       pull-requests: write
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        shell: bash
 
     steps:
       - name: checkout
