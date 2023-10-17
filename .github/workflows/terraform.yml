@@ -32,16 +32,19 @@ jobs:
       - name: validate
         run: terraform validate
 
+      - name: plan
+        run: terraform plan
+
+        if: github.even_name == 'push' && github.ref == 'refs/heads/main'
+
       - name: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
 
-      - name: plan
-        run: terraform plan
 
-      #- name: apply
+        #- name: apply
         #run: terraform apply -auto-approve
 
       #- name: destroy
